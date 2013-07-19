@@ -17,7 +17,7 @@ $VERSION        = 1.00;
 sub new {
 	my $class = shift;
 	my %options = @_;
-	print Dumper(\%options);
+
 	my $self = {
 		_verbose => defined($options{'verbose'}) ? $options{'verbose'} : 0,
 		_redirectToStderr => defined($options{'redirectToStderr'}) ? $options{'redirectToStderr'} : 0,
